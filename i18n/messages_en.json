@@ -1,0 +1,66 @@
+{
+	"welcome" : "Welcome",
+	
+	"english" : "English",
+    "french" : "Fran\u00e7ais",
+	
+	"create" : "Create",
+	"edit" : "Edit",
+	"delete" : "Delete",
+	"delete ok" : "Delete ok",
+	"save" : "Save",
+	"save ok" : "Save ok",
+	"cancel" : "Cancel",
+
+	"TblAuthor" : "TblAuthor",
+	"tblAuthor.authorid" : "authorid",
+	"tblAuthor.authorname" : "authorname",
+	"tblAuthor.id.not.defined" : "TblAuthor identifier is not defined",
+
+	"TblBook" : "TblBook",
+	"tblBook.bookid" : "bookid",
+	"tblBook.title" : "title",
+	"tblBook.authid" : "authid",
+	"tblBook.pubid" : "pubid",
+	"tblBook.id.not.defined" : "TblBook identifier is not defined",
+
+	"TblBookCopies" : "TblBookCopies",
+	"tblBookCopies.bookid" : "bookid",
+	"tblBookCopies.branchid" : "branchid",
+	"tblBookCopies.noofcopies" : "noofcopies",
+	"tblBookCopies.id.not.defined" : "TblBookCopies identifier is not defined",
+
+	"TblBookLoans" : "TblBookLoans",
+	"tblBookLoans.bookid" : "bookid",
+	"tblBookLoans.branchid" : "branchid",
+	"tblBookLoans.cardno" : "cardno",
+	"tblBookLoans.dateout" : "dateout",
+	"tblBookLoans.duedate" : "duedate",
+	"tblBookLoans.id.not.defined" : "TblBookLoans identifier is not defined",
+
+	"TblBorrower" : "TblBorrower",
+	"tblBorrower.cardno" : "cardno",
+	"tblBorrower.name" : "name",
+	"tblBorrower.address" : "address",
+	"tblBorrower.phone" : "phone",
+	"tblBorrower.id.not.defined" : "TblBorrower identifier is not defined",
+
+	"TblLibraryBranch" : "TblLibraryBranch",
+	"tblLibraryBranch.branchid" : "branchid",
+	"tblLibraryBranch.branchname" : "branchname",
+	"tblLibraryBranch.branchaddress" : "branchaddress",
+	"tblLibraryBranch.id.not.defined" : "TblLibraryBranch identifier is not defined",
+
+	"TblPublisher" : "TblPublisher",
+	"tblPublisher.publisherid" : "publisherid",
+	"tblPublisher.publishername" : "publishername",
+	"tblPublisher.publisheraddress" : "publisheraddress",
+	"tblPublisher.publisherphone" : "publisherphone",
+	"tblPublisher.id.not.defined" : "TblPublisher identifier is not defined",
+	
+	"server.not.responding": "The server is not responding",
+	"url.invalid": "Invalid URL : {value}",
+	"url.bad": "Bad URL : {value}",
+
+	"app.version" : "Version"
+}

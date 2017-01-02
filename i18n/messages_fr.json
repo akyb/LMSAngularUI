@@ -1,0 +1,66 @@
+{
+	"welcome" : "Accueil",
+
+	"english" : "English",
+    "french" : "Fran\u00e7ais",	
+	
+	"create" : "Cr\u00e9er",
+	"edit" : "Modifier",
+	"delete" : "Supprimer",
+	"delete ok" : "Suppression r\u00e9ussie",
+	"save" : "Enregistrer",
+	"save ok" : "Enregistrement r\u00e9ussi",
+	"cancel" : "Annuler",
+
+	"TblAuthor" : "TblAuthor",
+	"tblAuthor.authorid" : "authorid",
+	"tblAuthor.authorname" : "authorname",
+	"tblAuthor.id.not.defined" : "L'identfiant de TblAuthor n'est pas d\u00E9fini",
+
+	"TblBook" : "TblBook",
+	"tblBook.bookid" : "bookid",
+	"tblBook.title" : "title",
+	"tblBook.authid" : "authid",
+	"tblBook.pubid" : "pubid",
+	"tblBook.id.not.defined" : "L'identfiant de TblBook n'est pas d\u00E9fini",
+
+	"TblBookCopies" : "TblBookCopies",
+	"tblBookCopies.bookid" : "bookid",
+	"tblBookCopies.branchid" : "branchid",
+	"tblBookCopies.noofcopies" : "noofcopies",
+	"tblBookCopies.id.not.defined" : "L'identfiant de TblBookCopies n'est pas d\u00E9fini",
+
+	"TblBookLoans" : "TblBookLoans",
+	"tblBookLoans.bookid" : "bookid",
+	"tblBookLoans.branchid" : "branchid",
+	"tblBookLoans.cardno" : "cardno",
+	"tblBookLoans.dateout" : "dateout",
+	"tblBookLoans.duedate" : "duedate",
+	"tblBookLoans.id.not.defined" : "L'identfiant de TblBookLoans n'est pas d\u00E9fini",
+
+	"TblBorrower" : "TblBorrower",
+	"tblBorrower.cardno" : "cardno",
+	"tblBorrower.name" : "name",
+	"tblBorrower.address" : "address",
+	"tblBorrower.phone" : "phone",
+	"tblBorrower.id.not.defined" : "L'identfiant de TblBorrower n'est pas d\u00E9fini",
+
+	"TblLibraryBranch" : "TblLibraryBranch",
+	"tblLibraryBranch.branchid" : "branchid",
+	"tblLibraryBranch.branchname" : "branchname",
+	"tblLibraryBranch.branchaddress" : "branchaddress",
+	"tblLibraryBranch.id.not.defined" : "L'identfiant de TblLibraryBranch n'est pas d\u00E9fini",
+
+	"TblPublisher" : "TblPublisher",
+	"tblPublisher.publisherid" : "publisherid",
+	"tblPublisher.publishername" : "publishername",
+	"tblPublisher.publisheraddress" : "publisheraddress",
+	"tblPublisher.publisherphone" : "publisherphone",
+	"tblPublisher.id.not.defined" : "L'identfiant de TblPublisher n'est pas d\u00E9fini",
+
+	"server.not.responding": "Le serveur ne r\u00e9pond pas",
+	"url.invalid": "URL invalide : {value}",
+	"url.bad": "URL incorrecte : {value}",
+
+	"app.version" : "Version"
+}

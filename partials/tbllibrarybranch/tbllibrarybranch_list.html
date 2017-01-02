@@ -1,0 +1,24 @@
+		<fieldset class="col-sm-12 bordure">
+			<legend class="legende">{{ 'TblLibraryBranch' | translate }}</legend>
+		
+			<div ng-include src="'partials/message-include.html'"></div>
+			
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>{{ 'tblLibraryBranch.branchid' | translate }}</th>
+						<th>{{ 'tblLibraryBranch.branchname' | translate }}</th>
+						<th>{{ 'tblLibraryBranch.branchaddress' | translate }}</th>
+						<th><a class="btn btn-info" href='#/tblLibraryBranch/new'>{{ 'create' | translate }}</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="tblLibraryBranch in tblLibraryBranchs">
+						<td>{{tblLibraryBranch.branchid}}</td>
+						<td>{{tblLibraryBranch.branchname}}</td>
+						<td>{{tblLibraryBranch.branchaddress}}</td>
+						<td><a class="btn btn-info" href="#/tblLibraryBranch/{{tblLibraryBranch.branchid}}">{{ 'edit' | translate }}</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>

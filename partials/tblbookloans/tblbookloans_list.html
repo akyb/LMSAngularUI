@@ -1,0 +1,28 @@
+		<fieldset class="col-sm-12 bordure">
+			<legend class="legende">{{ 'TblBookLoans' | translate }}</legend>
+		
+			<div ng-include src="'partials/message-include.html'"></div>
+			
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>{{ 'tblBookLoans.bookid' | translate }}</th>
+						<th>{{ 'tblBookLoans.branchid' | translate }}</th>
+						<th>{{ 'tblBookLoans.cardno' | translate }}</th>
+						<th>{{ 'tblBookLoans.dateout' | translate }}</th>
+						<th>{{ 'tblBookLoans.duedate' | translate }}</th>
+						<th><a class="btn btn-info" href='#/tblBookLoans/new'>{{ 'create' | translate }}</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="tblBookLoans in tblBookLoanss">
+						<td>{{tblBookLoans.bookid}}</td>
+						<td>{{tblBookLoans.branchid}}</td>
+						<td>{{tblBookLoans.cardno}}</td>
+						<td>{{tblBookLoans.dateout | date:'shortDate'}}</td>
+						<td>{{tblBookLoans.duedate | date:'shortDate'}}</td>
+						<td><a class="btn btn-info" href="#/tblBookLoans/{{tblBookLoans.bookid}}/{{tblBookLoans.branchid}}/{{tblBookLoans.cardno}}">{{ 'edit' | translate }}</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>

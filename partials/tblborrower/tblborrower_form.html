@@ -1,0 +1,46 @@
+	<fieldset class="col-sm-12 bordure">
+		<legend class="legende">{{ 'TblBorrower' | translate }}</legend>
+		
+		<div ng-include src="'partials/message-include.html'"></div>
+   		
+		<form class="well form-horizontal">
+			<div class="form-group">
+				<label for="tblBorrower_cardno" class="col-sm-2 control-label">{{ 'tblBorrower.cardno' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="tblBorrower_cardno" name="cardno" ng-model="tblBorrower.cardno" class="form-control" maxLength="11"  ng-disabled="mode != 'create'"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="tblBorrower_name" class="col-sm-2 control-label">{{ 'tblBorrower.name' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="tblBorrower_name" name="name" ng-model="tblBorrower.name" class="form-control" maxLength="45" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="tblBorrower_address" class="col-sm-2 control-label">{{ 'tblBorrower.address' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="tblBorrower_address" name="address" ng-model="tblBorrower.address" class="form-control" maxLength="45" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="tblBorrower_phone" class="col-sm-2 control-label">{{ 'tblBorrower.phone' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="tblBorrower_phone" name="phone" ng-model="tblBorrower.phone" class="form-control" maxLength="45" />
+				</div>
+			</div>
+
+			<!-- ACTION BUTTONS -->
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-2">
+					<a role="button" class="btn btn-danger btn-block" ng-click="delete(tblBorrower.cardno)" ng-show="mode != 'create'">{{ 'delete' | translate }}</a>
+				</div>
+    			<div class="col-sm-offset-4 col-sm-2">
+					<a role="button" class="btn btn-default btn-block" href="#/tblBorrower">{{ 'cancel' | translate }}</a>
+				</div>
+    			<div class="col-sm-2">
+					<button type="submit" class="btn btn-primary btn-lg btn-block" ng-click="save()">{{ 'save' | translate }}</button>
+				</div>
+			</div>
+		</form>
+			
+    </fieldset>

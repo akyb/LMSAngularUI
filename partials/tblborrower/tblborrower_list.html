@@ -1,0 +1,26 @@
+		<fieldset class="col-sm-12 bordure">
+			<legend class="legende">{{ 'TblBorrower' | translate }}</legend>
+		
+			<div ng-include src="'partials/message-include.html'"></div>
+			
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>{{ 'tblBorrower.cardno' | translate }}</th>
+						<th>{{ 'tblBorrower.name' | translate }}</th>
+						<th>{{ 'tblBorrower.address' | translate }}</th>
+						<th>{{ 'tblBorrower.phone' | translate }}</th>
+						<th><a class="btn btn-info" href='#/tblBorrower/new'>{{ 'create' | translate }}</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="tblBorrower in tblBorrowers">
+						<td>{{tblBorrower.cardno}}</td>
+						<td>{{tblBorrower.name}}</td>
+						<td>{{tblBorrower.address}}</td>
+						<td>{{tblBorrower.phone}}</td>
+						<td><a class="btn btn-info" href="#/tblBorrower/{{tblBorrower.cardno}}">{{ 'edit' | translate }}</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>

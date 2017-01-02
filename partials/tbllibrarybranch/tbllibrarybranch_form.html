@@ -1,0 +1,40 @@
+	<fieldset class="col-sm-12 bordure">
+		<legend class="legende">{{ 'TblLibraryBranch' | translate }}</legend>
+		
+		<div ng-include src="'partials/message-include.html'"></div>
+   		
+		<form class="well form-horizontal">
+			<div class="form-group">
+				<label for="tblLibraryBranch_branchid" class="col-sm-2 control-label">{{ 'tblLibraryBranch.branchid' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="tblLibraryBranch_branchid" name="branchid" ng-model="tblLibraryBranch.branchid" class="form-control" maxLength="11"  ng-disabled="mode != 'create'"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="tblLibraryBranch_branchname" class="col-sm-2 control-label">{{ 'tblLibraryBranch.branchname' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="tblLibraryBranch_branchname" name="branchname" ng-model="tblLibraryBranch.branchname" class="form-control" maxLength="45" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="tblLibraryBranch_branchaddress" class="col-sm-2 control-label">{{ 'tblLibraryBranch.branchaddress' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="tblLibraryBranch_branchaddress" name="branchaddress" ng-model="tblLibraryBranch.branchaddress" class="form-control" maxLength="45" />
+				</div>
+			</div>
+
+			<!-- ACTION BUTTONS -->
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-2">
+					<a role="button" class="btn btn-danger btn-block" ng-click="delete(tblLibraryBranch.branchid)" ng-show="mode != 'create'">{{ 'delete' | translate }}</a>
+				</div>
+    			<div class="col-sm-offset-4 col-sm-2">
+					<a role="button" class="btn btn-default btn-block" href="#/tblLibraryBranch">{{ 'cancel' | translate }}</a>
+				</div>
+    			<div class="col-sm-2">
+					<button type="submit" class="btn btn-primary btn-lg btn-block" ng-click="save()">{{ 'save' | translate }}</button>
+				</div>
+			</div>
+		</form>
+			
+    </fieldset>
